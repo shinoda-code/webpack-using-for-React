@@ -8,6 +8,8 @@ module.exports = () => merge(commonConf({outputFile, assetFile}), {
     mode: 'development', 
     devtool: 'source-map',
     devServer: {
+        port: 3309,
+        historyApiFallback: true,
         open: true,
         contentBase: './public',
         watchOptions: {
